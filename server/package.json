@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node ws.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/datastore": "^2.0.0",
+    "express": "^4.16.4",
+    "socket.io": "^2.1.1",
+    "uuid": "^3.3.2"
+  }
+}

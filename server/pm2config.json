@@ -1,0 +1,14 @@
+{
+    "name": "myapp",
+    "script": "ws.js",
+
+    "env": {
+        "NODE_ENV": "local",
+        "GOOGLE_APPLICATION_CREDENTIALS":"/home/hikari/kyoko-land-c981487e1f19.json"
+    },
+
+    "env_production": {
+        "NODE_ENV": "production",
+        "GOOGLE_APPLICATION_CREDENTIALS":"/home/hikari/kyoko-land-c981487e1f19.json"
+    }
+}

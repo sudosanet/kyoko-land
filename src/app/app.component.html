@@ -1,21 +1,60 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div id="title">
+  <a routerLink="/"><img alt="Logo" src="../assets/kyoko-land-logo@3x.png"></a>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
-<router-outlet></router-outlet>
+<div>
+  <div id="blur">
+    <div id="nightsky"><div class="xmas"></div></div>
+    <div id="twinkle">
+      <div id="anime-0"></div>
+      <div id="anime-1"></div>
+      <div id="anime-2"></div>
+      <div id="anime-3"></div>
+      <div id="anime-4"></div>
+      <div id="anime-5"></div>
+      <div id="anime-6"></div>
+      <div id="anime-7"></div>
+      <div id="anime-8"></div>
+      <div id="anime-9"></div>
+      <div id="anime-10"></div>
+      <div id="anime-11"></div>
+      <div id="anime-12"></div>
+      <div id="anime-13"></div>
+      <div id="anime-14"></div>
+      <div id="anime-15"></div>
+      <div id="anime-16"></div>
+      <div id="anime-17"></div>
+      <div id="anime-18"></div>
+      <div id="anime-19"></div>
+    </div>
+    <div id="reflect_wrap">
+      <div id="star_wrap"></div>
+    </div>
+    <div id="ground"></div>
+  </div>
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
+<div id="menu">
+  <h2>Menu</h2>
+  <ul>
+    <li><a routerLink="/introduction">Introduction</a></li>
+    <li><a routerLink="/about">About</a></li>
+    <li><a routerLink="/other">Other Sites</a></li>
+    <li><a routerLink="/starlight">Starlight View</a></li>
+    <li><a routerLink="/credit">Credit</a></li>
+    <li><a href="https://twitter.com/intent/tweet?text=Starry-Kyoko-Land&url=https%3A%2F%2Fstarry-go-round.com" target="_blank">Tweet</a></li>
+  </ul>
+  <div id="counter">
+    <h2>高まりカウント</h2>
+    <h3 id="num">000000000000</h3>
+  </div>
+</div>
+<div id="nav">
+  <a class="menu-trigger" id="navButton">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+</div>
+<div id="bgm_button">♫</div>
+<audio id="bgm" src="./assets/loop.mp3" loop></audio>

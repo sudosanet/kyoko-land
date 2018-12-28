@@ -1,0 +1,43 @@
+.flex{
+    display: flex;
+    margin:20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    height: calc(100% - 160px);
+}
+.box{
+    margin: 10px;
+    a{
+        display: block;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    a,h3,p{
+        overflow: hidden !important;
+    }
+    h3{
+        color:yellow;
+        font-size: 20px;
+    }
+    h3,p{
+        font-family: a-otf-ud-shin-go-pr6n, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-align: center;
+        margin:0 !important;
+    }
+    img{
+       width: 100%;
+    }
+    width: 30vw;
+}
+@media (max-width: 760px) {
+.box{
+    width: 90vw;
+}
+.flex{
+    height: calc(100% - 110px);
+}
+}

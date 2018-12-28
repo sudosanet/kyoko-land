@@ -7,7 +7,9 @@
 
 # dependencies
 /node_modules
-
+server/node_modules
+#model
+/src/assets/model
 # IDEs and editors
 /.idea
 .project
